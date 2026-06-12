@@ -247,12 +247,12 @@ const BackgroundYouTubePlayer = forwardRef<
         aria-hidden="true"
         className="pointer-events-none fixed inset-0 overflow-hidden transition-opacity duration-500"
         style={{
-          filter: "blur(16px) brightness(0.35)",
+          filter: "blur(10px) brightness(0.55) contrast(1.05) saturate(1.08)",
           inset: 0,
           opacity: active ? 1 : 0,
           pointerEvents: "none",
           position: "fixed",
-          transform: "scale(1.12)",
+          transform: "scale(1.09)",
           zIndex: 0,
         }}
       >
@@ -260,7 +260,7 @@ const BackgroundYouTubePlayer = forwardRef<
       </div>
       <div
         aria-hidden="true"
-        className="pointer-events-none fixed inset-0 bg-black/65"
+        className="pointer-events-none fixed inset-0 bg-black/50"
         style={{ zIndex: 1 }}
       />
     </>
