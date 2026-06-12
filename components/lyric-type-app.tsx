@@ -6,7 +6,6 @@ import { useState } from "react";
 import { SongResults } from "@/components/song-results";
 import { SongSearch } from "@/components/song-search";
 import { TypingGame } from "@/components/typing-game";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,

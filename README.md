@@ -65,6 +65,29 @@ The app does not use the YouTube Data API or any YouTube API key. YouTube lookup
 
 Restricted serverless environments may not support `yt-dlp`. In that case, the automatic video search can fail, and the app keeps a manual YouTube URL or ID fallback so a user can still start a session.
 
+## Easypanel / Docker
+
+This repository includes a production `Dockerfile` for VPS deployments through Easypanel.
+
+In Easypanel:
+
+- Create an app from this Git repository.
+- Select Dockerfile-based build.
+- Use port `3000`.
+- No `YOUTUBE_API_KEY` is required.
+
+The image installs `yt-dlp` in the runtime container with `pip`, then runs the app with:
+
+```bash
+npm start
+```
+
+You can verify the binary inside a running container with:
+
+```bash
+yt-dlp --version
+```
+
 ## Next Steps
 
 - Leaderboard
